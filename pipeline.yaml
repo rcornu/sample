@@ -5,7 +5,7 @@ steps:
       git clone https://github.com/rcornu/swarm-android.git
       ls -la
 
-  - name: "echo"
-    image: "truc"
-    commands: |
-      echo hello
+#  - name: "echo"
+#    image: "truc"
+#    commands: |
+#      echo hello

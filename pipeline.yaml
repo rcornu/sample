@@ -10,3 +10,4 @@ steps:
     image: "truc"
     commands: |
       echo helloooo
+      ljhljkh

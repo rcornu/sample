@@ -3,10 +3,11 @@ steps:
   - name: "checkout"
     image: "truc"
     commands: |
+      echo "=> checkout"
       git clone https://github.com/rcornu/swarm-android.git
       ls -la
 
-  - name: "echo"
-    image: "truc"
-    commands: |
-      echo helloooo
+#  - name: "echo"
+#    image: "truc"
+#    commands: |
+#      echo helloooo

@@ -6,7 +6,7 @@ steps:
       echo "=> checkout"
       git clone https://github.com/rcornu/swarm-android.git
       ls -la
-      echo "=> end3"
+      echo "=> end4"
 
 #  - name: "echo"
 #    image: "truc"

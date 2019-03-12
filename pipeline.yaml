@@ -8,7 +8,7 @@ steps:
       ls -la
       echo "=> end4"
 
-#  - name: "echo"
-#    image: "truc"
-#    commands: |
-#      echo helloooo
+ - name: "echo"
+   image: "truc"
+   commands: |
+     echo helloooo

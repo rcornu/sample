@@ -5,6 +5,6 @@ if [[ -z "${PAYLOAD}" ]]; then
   echo $DATA | jq -r > /run.sh
   chmod +x /run.sh
   /run.sh
+else
+  echo 'No payload given'
 fi
-
-

@@ -1,4 +1,4 @@
-#comment fake
+#
 steps:
   - name: "checkout"
     image: "truc"

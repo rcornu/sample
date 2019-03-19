@@ -1,3 +1,4 @@
+#comment
 steps:
   - name: "checkout"
     image: "truc"

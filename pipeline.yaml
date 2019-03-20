@@ -11,3 +11,4 @@ steps:
     runtime: docker
     commands: |
       echo helloooo
+      docker ps

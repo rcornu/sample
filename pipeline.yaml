@@ -1,14 +1,13 @@
 # 13
 steps:
-  - name: "checkout"
-    image: "truc"
+  - name: checkout
     commands: |
       echo "=> checkout"
       git clone https://github.com/rcornu/swarm-android.git
       ls -la
       echo "=> end4"
 
-  - name: "echo"
-    image: "truc"
+  - name: echo
+    runtime: docker
     commands: |
       echo helloooo

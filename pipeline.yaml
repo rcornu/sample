@@ -1,5 +1,6 @@
 # 18
 steps:
   - name: echo
+    runtime: docker
     commands: |
       echo helloooo

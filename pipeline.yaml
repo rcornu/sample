@@ -1,5 +1,4 @@
-# 44
-steps:
-  - name: echo
-    commands: |
-      echo helloooo
+image: python
+commands: |
+  ls -la
+  cat README.md

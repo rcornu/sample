@@ -2,4 +2,4 @@ image: python
 commands: |
   ls -la
   cat README.md
-  python3 -v
+  python3 --version

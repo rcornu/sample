@@ -2,6 +2,3 @@ image: python
 commands: |
   ls -la
   cat README.md
-  echo $BRANCH
-  echo $COMMIT
-  echo $REPOSITORY

@@ -2,4 +2,3 @@ image: python
 commands: |
   ls -la
   cat README.md
-  echo $BRANCH

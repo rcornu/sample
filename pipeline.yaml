@@ -1,5 +1,4 @@
 image: python
 commands: |
   ls -la
-  cat README.mde
-  echo $COMMIT
+  cat README.md

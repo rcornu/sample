@@ -4,4 +4,4 @@ commands: |
   cat README.md
   echo $COMMIT
   apt-get update
-  apt-get install awscli
+  apt-get install -y awscli

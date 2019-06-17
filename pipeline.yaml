@@ -1,7 +1,14 @@
-image: python
-commands: |
-  ls -la
-  cat README.md
-  echo $COMMIT
-  apt-get update
-  apt-get install -y awscli
+version: 0.1
+tasks:
+  - name: python version
+    image: python
+    commands: |
+      echo start task1
+      python --version
+      echo end task1
+  - name: node version
+    image: python
+    commands: |
+      echo start task2
+      node --version
+      echo end task2

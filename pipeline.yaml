@@ -1,14 +1,17 @@
 version: 0.1
-tasks:
-  - name: python version
-    image: python
-    commands: |
+jobs:
+  build:
+    docker:
+      image: python
+    steps: |
       echo start task1
       python --version
       echo end task1
-  - name: node version
-    image: python
-    commands: |
+
+  deploy:
+    docker:
+      image: node
+    steps: |
       echo start task2
       node --version
       echo end task2

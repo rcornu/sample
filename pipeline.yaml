@@ -1,11 +1,10 @@
 version: 0.1
-jobs:
+tasks:
   build:
     docker:
       image: python
     steps:
       - echo start task1
-      - checkout
       - python --version
       - echo end task1
 

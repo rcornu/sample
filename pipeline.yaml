@@ -5,6 +5,7 @@ tasks:
       image: python
     steps:
       - echo start task1
+      - checkout
       - python --version
       - echo end task1
 

@@ -3,15 +3,15 @@ jobs:
   build:
     docker:
       image: python
-    steps: |
-      echo start task1
-      python --version
-      echo end task1
+    steps:
+      - echo start task1
+      - python --version
+      - echo end task1
 
   deploy:
     docker:
       image: node
-    steps: |
-      echo start task2
-      node --version
-      echo end task2
+    steps:
+      - echo start task2
+      - node --version
+      - echo end task2

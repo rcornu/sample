@@ -6,7 +6,7 @@ tasks:
     steps:
       - echo start task1
       - checkout
-      - errrorrr
+      - errror
       - echo end task1
 
   deploy:

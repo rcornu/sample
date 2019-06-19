@@ -6,7 +6,7 @@ tasks:
     steps:
       - echo start task1
       - checkout
-      - echo end task1
+      - echo end task10
 
   deploy:
     docker:

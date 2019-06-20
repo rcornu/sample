@@ -6,6 +6,7 @@ tasks:
     steps:
       - echo start task1
       - checkout
+      - ls -la
       - echo end task1
 
   deploy:

@@ -12,6 +12,8 @@ tasks:
   deploy:
     docker:
       image: node
+    requires:
+      - build
     steps:
       - echo start task2
       - node --version

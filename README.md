@@ -1,2 +1,2 @@
 # sample
-requires
+1

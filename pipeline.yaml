@@ -3,6 +3,8 @@ tasks:
   build:
     docker:
       image: python
+    requires:
+      - deploy
     steps:
       - echo start task1
       - checkout
@@ -12,8 +14,6 @@ tasks:
   deploy:
     docker:
       image: node
-    requires:
-      - build
     steps:
       - echo start task2
       - node --version

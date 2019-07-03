@@ -3,17 +3,20 @@ tasks:
   build:
     docker:
       image: python
-    requires:
-      - deploy
+    environment:
+      FOO: bar
     steps:
       - echo start task1
       - checkout
       - ls -la
+      - echo $FOO
       - echo end task1
 
   deploy:
     docker:
       image: node
+    requires:
+      - build
     steps:
       - echo start task2
       - node --version

@@ -6,18 +6,28 @@ tasks:
     environment:
       FOO: bar
     steps:
-      - echo start task1
+      - echo start build
       - checkout
       - ls -la
       - echo $FOO
-      - echo end task1
+      - echo end build
 
-  deploy:
+  test:
     docker:
       image: node
     requires:
       - build
     steps:
-      - echo start task2
+      - echo start test
       - node --version
-      - echo end task2
+      - echo end test
+
+  deploy:
+    docker:
+      image: node
+    requires:
+      - test
+    steps:
+      - echo start deploy
+      - node --version
+      - echo end deploy

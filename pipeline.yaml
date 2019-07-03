@@ -21,3 +21,13 @@ tasks:
       - echo start test
       - node --version
       - echo end test
+
+  deploy:
+    docker:
+      image: node
+    requires:
+      - test
+    steps:
+      - echo start deploy
+      - node --version
+      - echo end deploy

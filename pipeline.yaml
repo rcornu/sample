@@ -6,7 +6,7 @@ tasks:
     environment:
       FOO: bar
     secrets:
-      FOO_SECRET: SECRET123
+      FOO_SECRET: SECRET124
     steps:
       - echo start build
       - checkout

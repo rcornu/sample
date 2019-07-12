@@ -5,11 +5,14 @@ tasks:
       image: python
     environment:
       FOO: bar
+    secrets:
+      FOO_SECRET: SECRET123
     steps:
       - echo start build
       - checkout
       - ls -la
       - echo $FOO
+      - echo $FOO_SECRET
       - echo end build
 
   test:
@@ -21,13 +24,3 @@ tasks:
       - echo start test
       - node --version
       - echo end test
-
-  deploy:
-    docker:
-      image: node
-    requires:
-      - test
-    steps:
-      - echo start deploy
-      - node --version
-      - echo end deploy
